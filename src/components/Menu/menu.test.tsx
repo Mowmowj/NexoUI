@@ -20,7 +20,7 @@ const testProps: MenuProps = {
   onSelect: jest.fn(),
   className: 'test'
 }
-const testVerProps: MenuProps = {
+const testVerticalProps: MenuProps = {
   defaultIndex: '0',
   mode: 'vertical',
   defaultOpenSubMenus: ['4']
@@ -52,10 +52,10 @@ const generateMenu = (props: MenuProps) => {
 }
 const createStyleFile = () => {
   const cssFile: string = `
-    .viking-submenu {
+    .nexo-submenu {
       display: none;
     }
-    .viking-submenu.menu-opened {
+    .nexo-submenu.menu-opened {
       display:block;
     }
   `
@@ -75,8 +75,8 @@ describe('test Menu and MenuItem component in default(horizontal) mode', () => {
   })
   it('should render correct Menu and MenuItem based on default props', () => {
     expect(menuElement).toBeInTheDocument()
-    expect(menuElement).toHaveClass('viking-menu test')
-    expect(menuElement.querySelectorAll(':scope > li').length).toEqual(5)
+    expect(menuElement).toHaveClass('nexo-menu test')
+    expect(menuElement.querySelectorAll(':scope > li').length).toEqual(5)//css选择器
     expect(activeElement).toHaveClass('menu-item is-active')
     expect(disabledElement).toHaveClass('menu-item is-disabled')
   })
@@ -105,9 +105,10 @@ describe('test Menu and MenuItem component in default(horizontal) mode', () => {
     })
   })
 })
+
 describe('test Menu and MenuItem component in vertical mode', () => {
   beforeEach(() => {
-    wrapper2 = render(generateMenu(testVerProps))
+    wrapper2 = render(generateMenu(testVerticalProps))
     wrapper2.container.append(createStyleFile())
   })
   it('should render vertical mode when mode is set to vertical', () => {
