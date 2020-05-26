@@ -18,7 +18,6 @@ const App:  React.FC=()=> {
           <MenuItem disabled>
           home page
           </MenuItem>
-          
           <MenuItem >
           about page
           </MenuItem>

@@ -1,72 +1,85 @@
-import React from 'react'
+import React, { FC, ButtonHTMLAttributes, AnchorHTMLAttributes } from 'react'
 import classNames from 'classnames'
 
+export type ButtonSize = 'lg' | 'sm'
+export type ButtonType = 'primary' | 'default' | 'danger' | 'link'
 
-export enum ButtonType{
- Primary = 'primary',
- Default = 'default',
- Danger  = 'danger',
- Link    =  'link',
- Circle  =   'circle'
+interface BaseButtonProps {
+  /**设置 Button 的类名 */
+  className?: string;
+  /**设置 Button 的状态 */
+  disabled?: boolean;
+  /**设置 Button 的大小 */
+  size?: ButtonSize;
+  /**设置 Button 的类别 */
+  btnType?: ButtonType;
+  children: React.ReactNode;
+  /**设置 Button 的跳转 */
+  href?: string;
 }
-
-export enum ButtonSize{
-    Large ='lg',
-    Small ='sm'
-}
-
-interface BaseButtonProps{
-    classNames?: string;
-    disabled?:  boolean;
-    size?:      ButtonSize;
-    btnType?:   ButtonType;
-    children:  React.ReactNode;
-    href?:      string;
-}
-type NativeButtonProps = BaseButtonProps & React.ButtonHTMLAttributes<HTMLElement>
-type AnchorButtonProps = BaseButtonProps & React.AnchorHTMLAttributes<HTMLElement>
+type NativeButtonProps = BaseButtonProps & ButtonHTMLAttributes<HTMLElement>
+type AnchorButtonProps = BaseButtonProps & AnchorHTMLAttributes<HTMLElement>
 export type ButtonProps = Partial<NativeButtonProps & AnchorButtonProps>
-
-const Button: React.FC<ButtonProps> = (props)=>{
-    const {
-        btnType,
-        className,
-        disabled,
-        size,
-        children,
-        href,
-        ...restProps
-    } = props
-
-    const classes = classNames('btn',className,{
-        [`btn-${btnType}`]: btnType,
-        [`btn-${size}`]: size,
-        'disabled':(btnType===ButtonType.Link)&&disabled
-    })
-    if(btnType===ButtonType.Link&&href){
-        return(
-        <a
-            className={classes}
-            href={href}
-            {...restProps}
-        >
+/**  
+ * 
+ * **The buttons of the Nexo UI include the following features:**
+ * + Multiple sizes
+ * + Multiple types
+ * + Can be set to disable
+ * 
+ * **Nexo组件库的按钮包括以下特点： **     
+ * + **多种尺寸**  
+ * + **多种类型**
+ * + **可设置禁用**
+ * 
+ * ##### Reference Methods
+ * 
+ * ~~~js
+ * import { Button } from 'nexo'
+ * ~~~
+ */
+export const Button: FC<ButtonProps> = (props) => {
+  const { 
+    btnType,
+    className,
+    disabled,
+    size,
+    children,
+    href,
+    ...restProps
+  } = props
+  // btn, btn-lg, btn-primary
+  const classes = classNames('btn', className, {
+    [`btn-${btnType}`]: btnType,
+    [`btn-${size}`]: size,
+    'disabled': (btnType === 'link') && disabled
+  })
+  if (btnType === 'link' && href ) {
+    return (
+      <a
+        className={classes}
+        href={href}
+        {...restProps}
+      >
         {children}
-        </a>
-        )
-    }else{
-        return(
-            <button
-                className={classes}
-                disabled ={disabled}
-                {...restProps}
-            >
-                {children}
-            </button>
-        )
-    }
+      </a>
+    )
+  } else {
+    return (
+      <button
+        className={classes}
+        disabled={disabled}
+        {...restProps}
+      >
+        {children}
+      </button>
+    )
+  }
 }
-Button.defaultProps ={
-    disabled:false,
-    btnType:ButtonType.Default
+
+Button.defaultProps = {
+  disabled: false,
+  btnType: 'default'
 }
-export default Button
+
+export default Button;

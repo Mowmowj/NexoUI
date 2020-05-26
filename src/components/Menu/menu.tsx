@@ -4,15 +4,15 @@ import { MenuItemProps } from './menuItem'
 
 type MenuMode = 'horizontal' | 'vertical'
 export interface MenuProps {
-  /**默认 active 的菜单项的索引值 */
+  /**默认选中态的菜单索引值 */
   defaultIndex?: string;
   className?: string;
-  /**菜单类型 横向或者纵向 */
+  /**菜单方向：水平或垂直 */
   mode?: MenuMode;
   style?: CSSProperties;
-  /**点击菜单项触发的回掉函数 */
+  /**点击触发的回调函数 */
   onSelect?: (selectedIndex: string) => void;
-  /**设置子菜单的默认打开 只在纵向模式下生效 */
+  /**设置子菜单的默认打开索引值 只在垂直模式下生效 */
   defaultOpenSubMenus?: string[];
 }
 interface IMenuContext {
@@ -23,7 +23,22 @@ interface IMenuContext {
 }
 
 export const MenuContext = createContext<IMenuContext>({index: '0'})
+/** 
+ * 
+ *  The menu of Nexo component library can realize:
+ *+ Menu direction
+ *+ Disable menu
+ *+ Default active state
+ *+ Open submenu by default
+ *+ Trigger menu events
 
+ Nexo组件库的菜单，可以实现:
+ *+ 菜单方向
+ *+ 禁用菜单
+ *+ 默认激活态
+ *+ 默认打开子菜单
+ *+ 触发菜单事件
+ */
 export const Menu: FC<MenuProps> = (props) => {
   const { className, mode, style, children, defaultIndex, onSelect, defaultOpenSubMenus } = props
   const [ currentActive, setActive ] = useState(defaultIndex)
