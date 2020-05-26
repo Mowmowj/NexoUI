@@ -36,7 +36,7 @@ const SubMenu: React.FC<SubMenuProps> = ({ index, title, children, className}) =
     onClick: handleClick
   } : {}
   const hoverEvents = context.mode !== 'vertical' ? {
-    onMouseEnter: (e: React.MouseEvent) => { handleMouse(e, true)},
+     onMouseEnter: (e: React.MouseEvent) => {  handleMouse(e, true)},
     onMouseLeave: (e: React.MouseEvent) => { handleMouse(e, false)}
   } : {}
   const renderChildren = () => {
@@ -54,26 +54,22 @@ const SubMenu: React.FC<SubMenuProps> = ({ index, title, children, className}) =
       }
     })
     return (
-      // <Transition
-      //   in={menuOpen}
-      //   timeout={300}
-      //   animation="zoom-in-top"
-      // >
         <ul className={subMenuClasses}>
           {childrenComponent}
         </ul>
-      // </Transition>
     )
   }
   // {...clickEvents}
   return (
-    <li key={index} className={classes} {...hoverEvents}>
-      <div className="submenu-title" {...clickEvents}>
-        {title}
-        <Icon icon="angle-down" className="arrow-icon"/>
-      </div>
-      {renderChildren()}
-    </li>
+   <li key={index} className={classes} {...hoverEvents}>
+    <div className="submenu-title" {...clickEvents}>
+      {title}
+      <div className="arrow-icon">
+     <Icon icon="angle-down" />
+     </div>
+    </div>
+    {renderChildren()}
+  </li>
   )
 }
 

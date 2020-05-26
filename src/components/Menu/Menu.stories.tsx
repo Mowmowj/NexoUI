@@ -13,7 +13,7 @@ import SubMenu from './subMenu'
 // }
 // const CenterDecorator = (storyFn: any)=><div style={styles}>{storyFn()}</div>
 const horizontalMeau = () => (
-  <Menu defaultIndex='' onSelect={(index)=>{action('clicked')}} defaultOpenSubMenus={['2']}>
+  <Menu defaultIndex='3' onSelect={(index)=>{action('clicked')}} defaultOpenSubMenus={['2']}>
     <MenuItem disabled>
           disabled page
           </MenuItem>

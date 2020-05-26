@@ -4,3 +4,21 @@
          color:$val;
     }
 }
+
+
+.a svg{
+animation:rotating 1.2s ease infinite
+}
+.b svg{
+    animation:rotating 1.2s linear infinite
+}
+.c svg{
+    animation:rotating 1.2s ease-in infinite
+}
+.d svg{
+    animation:rotating 1.2s ease-in-out infinite
+}
+@keyframes rotating{
+    from{transform:rotate(0)}
+    to{transform:rotate(360deg)}
+}
