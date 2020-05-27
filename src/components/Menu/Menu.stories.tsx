@@ -7,11 +7,7 @@ import MenuItem from './menuItem'
 import SubMenu from './subMenu'
 
 
-// const styles: React.CSSProperties = {
-//     // paddingTop:300,
-//     textAlign: 'center'
-// }
-// const CenterDecorator = (storyFn: any)=><div style={styles}>{storyFn()}</div>
+
 const horizontalMeau = () => (
   <Menu defaultIndex='3' onSelect={(index)=>{action('clicked')}} defaultOpenSubMenus={['2']}>
     <MenuItem disabled>

@@ -26,6 +26,8 @@ addDecorator(storyWrapper)
 addDecorator(withInfo)
 addDecorator(centered)
 addParameters({info: { inline: true, header: false}})
+configure(require.context('../src/components', true, /\.stories\.tsx$/),module);
+
 // const loaderFn = () => {
 //   const allExports = [require('../src/stories/0-Welcome.stories')];
 //   const req = require.context('../src/components', true, /\.stories\.tsx$/);
@@ -36,4 +38,3 @@ addParameters({info: { inline: true, header: false}})
 
 
 // automatically import all files ending in *.stories.js
-configure(require.context('../src/components', true, /\.stories\.tsx$/),module);

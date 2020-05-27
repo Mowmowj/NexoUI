@@ -5,11 +5,7 @@ import { action } from '@storybook/addon-actions'
 import '../../styles/index.scss'
 import Button from './button'
 
-// const styles: React.CSSProperties = {
-//     // paddingTop:300,
-//     textAlign: 'center'
-// }
-// const CenterDecorator = (storyFn: any)=><div style={styles}>{storyFn()}</div>
+
 const defaultButton = () => (
   <Button onClick={action('clicked')}> Normal </Button>
 )
@@ -34,13 +30,12 @@ const buttonWithType = () => (
     <Button btnType="link" size='lg' href="https://google.com"> Link  </Button>
     <br/>
     <br/>
-    <Button btnType="link" disabled= 'true'  href="https://google.com"> Disabled Link  </Button>
+    <Button btnType="link" disabled = {true}  href="https://google.com"> Disabled Link  </Button>
   </>
 )
 
 
 storiesOf('Button Component', module)
-
     // .addParameters({
     //     info: {
     //         inline: true 

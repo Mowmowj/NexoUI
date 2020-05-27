@@ -13,12 +13,20 @@ animation:rotating 1.2s ease infinite
     animation:rotating 1.2s linear infinite
 }
 .c svg{
-    animation:rotating 1.2s ease-in infinite
+    animation:moving 10.2s ease-out infinite
 }
 .d svg{
-    animation:rotating 1.2s ease-in-out infinite
+    animation: moving 5.2s cubic-bezier(1,2,0.3,0.2) infinite//立方贝塞尔函数
 }
 @keyframes rotating{
     from{transform:rotate(0)}
     to{transform:rotate(360deg)}
+}
+@keyframes moving{
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(100px);
+    }
 }

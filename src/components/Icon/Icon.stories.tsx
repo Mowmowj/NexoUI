@@ -25,7 +25,7 @@ const icon = () => (
   <h4>Diff Size Icon</h4>
       <Icon icon='toggle-on' theme='success' size='3x'/><span>  </span>
       <Icon icon="toggle-off" theme='dark' size='4x'/><span>  </span>
-      <Icon icon="flash" theme='warning' size='4x'/><span>  </span>
+      <Icon icon="cloud" theme='primary' size='4x'/><span>  </span>
   <h4>Dynamic Icon</h4>
       <div className='a'>
       <Icon icon='hourglass-half' theme='danger' size='2x'/>
@@ -34,12 +34,11 @@ const icon = () => (
       <Icon icon='cog' theme='dark' size='2x'/>
       </div>
       <div className='c'>
-      <Icon icon='male' theme='dark' size='4x'/>
+      <Icon icon='male' theme='primary' size='2x'/>
       </div>
       <div className='d'>
-      <Icon icon='key' theme='success' size='2x'/>
+      <Icon icon='truck' theme='dark' size='2x'/>
       </div>
-
   </>
 )
 

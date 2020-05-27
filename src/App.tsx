@@ -49,12 +49,7 @@ const App:  React.FC=()=> {
           </SubMenu>
 
       </Menu>
-        <Button autoFocus>Normal </Button>
-        <Button disabled>Disabled</Button>
-        <Button btnType={ButtonType.Primary} size={ButtonSize.Large}>Large  </Button>
-        <Button btnType={ButtonType.Link} href="https://www.google.com">Google Link  </Button>
-        <Button btnType={ButtonType.Link} href="" disabled> Disabled Link </Button>
-        <Button btnType={ButtonType.Danger}>Danger</Button>
+
 
       </header>
     </div>

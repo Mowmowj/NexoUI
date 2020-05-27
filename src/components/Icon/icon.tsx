@@ -3,16 +3,13 @@ import classNames from 'classnames'
 import { FontAwesomeIcon, FontAwesomeIconProps } from '@fortawesome/react-fontawesome'
 
 export type Themeprops = 'primary'|'secondary'|'success'|'info'|'warning'|'danger'|'light'|'dark'
-// export type animationprops = 'animation'
+
 export interface Iconprops extends FontAwesomeIconProps{
-    /**
-     * parms {Themeprops} theme
-     */
     theme?: Themeprops
     classNames?: string
 }
 /**
- * 
+ * this Icon Component base on FrontAwesomeIcon Library
  */
 export const Icon: React.FC<Iconprops> =(props)=>{
     const {className,theme,...restProps} =props
@@ -24,4 +21,4 @@ export const Icon: React.FC<Iconprops> =(props)=>{
     )
 }
 
-export default Icon
+export default Icon;
