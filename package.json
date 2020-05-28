@@ -1,7 +1,32 @@
 {
   "name": "nexo",
   "version": "0.1.0",
-  "private": true,
+  "description": "React UI components library",
+  "author": "Shelton Cheung",
+  "private": false,
+  "license": "MIT",
+  "module": "build",
+  "main": "build/index.js",
+  "module": "build/index.js",
+  "types": "build/index.ts",
+  "keywords": [
+    "react",
+    "typescript",
+    "user Interface",
+    "uI",
+    "react Hooks",
+    "storybook",
+    "component",
+    "library"
+  ],
+  "homepage": "https://github.com/Mowmowj/NexoUI",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mowmowj/NexoUI"
+  },
+  "files": [
+    "nexoui"
+  ],
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
     "@fortawesome/free-solid-svg-icons": "^5.13.0",

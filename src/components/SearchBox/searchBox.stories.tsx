@@ -1,64 +1,93 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-// import { action } from '@storybook/addon-actions'
-import { SearchBox } from './searchbox'
-interface LakerPlayerProps {
+import { action } from '@storybook/addon-actions'
+import { SearchBox,DataSourceType } from './searchbox'
+
+
+interface clipperPlayerProps {
   value: string;
   number: number;
 }
-interface GithubUserProps {
-  login: string;
-  url: string;
-  avatar_url: string;
-}
-const defaultSearchBox = () => {
-  const lakers = ['bradley', 'pope', 'caruso', 'cook', 'cousins',
-  'james', 'AD', 'green', 'howard', 'kuzma', 'McGee', 'rando']
-  // const lakersWithNumber = [
-  //   {value: 'bradley', number: 11},
-  //   {value: 'pope', number: 1},
-  //   {value: 'caruso', number: 4},
-  //   {value: 'cook', number: 2},
-  //   {value: 'cousins', number: 15},
-  //   {value: 'james', number: 23},
-  //   {value: 'AD', number: 3},
-  //   {value: 'green', number: 14},
-  //   {value: 'howard', number: 39},
-  //   {value: 'kuzma', number: 0},
-  // ]
-  const handleFetch = (query: string) => {
-    return lakers.filter(name => name.includes(query))
-    // .map(name => ({value: name}))
-  }
-  // const handleFetch = (query: string) => {
-  //   return lakersWithNumber.filter(player => player.value.includes(query))
-  // }
-  // const handleFetch = (query: string) => {
-  //   return fetch(`https://api.github.com/search/users?q=${query}`)
-  //     .then(res => res.json())
-  //     .then(({ items }) => {
-  //       console.log(items)
-  //       return items.slice(0, 10).map((item: any) => ({ value: item.login, ...item}))
-  //     })
-  // }
 
-  // const renderOption = (item: DataSourceType) => {
-  //   const itemWithGithub = item as DataSourceType<GithubUserProps>
-  //   return (
-  //     <>
-  //       <h2>Name: {itemWithGithub.value}</h2>
-  //       <p>url: {itemWithGithub.url}</p>
-  //     </>
-  //   )
+const clipperssWithNumber = [
+  {value: 'paul george', number: 9},
+  {value: 'kawhi leonard', number: 8},
+  {value: 'montrezl harrell', number: 4},
+  {value: 'lou williams', number: 14},
+  {value: 'jaMychal green', number: 5},
+  {value: 'patrick beverley', number: 7},
+  {value: 'rodney mcGruder', number: 3},
+  {value: 'jerome robinson', number: 1},
+]
+const defaultSearchBox = () => {
+//   const lakers = ['bradley', 'pope', 'caruso', 'cook', 'cousins',
+//   'james', 'AD', 'green', 'howard', 'kuzma', 'McGee', 'rando']
+  
+  // const handleFetch = (query: string) => {
+  //   return lakers.filter(name => name.includes(query)).map(name => ({value: name}))
   // }
+  const handleFetch = (query: string) => {
+    return clipperssWithNumber.filter(player => {
+      return player.value.includes(query)})
+  }
+  const renderModel = (data: DataSourceType ) =>{
+    const item = data as DataSourceType<clipperPlayerProps>
+    return (
+    <>
+    <h4>name:{item.value}</h4>
+    <p> number:{item.number}</p>
+    </>
+    )
+  }
   return (
+    <>
+    <h6>Use for search the NBA Clipper team player's name:</h6>
     <SearchBox 
-    searchSuggestions={ handleFetch }
-      // onSelect={action('selected')}
-      //renderOption={renderOption}
+    searchSuggestions = { handleFetch }
+      onSelect = { action('selected') }
+      renderModel = { renderModel} 
     />
+    </>
+  )
+}
+
+const apiSerachbox = () =>{
+  
+  interface GithubUserIDProps {
+    login: string;
+    html_url: string;
+  }
+
+  const handleFetch = (query: string) => {
+    return fetch(`https://api.github.com/search/users?q=${query}`)  //github name api
+      .then(res => res.json())
+      .then(({ items }) => {
+        return items.slice(0, 8).map((item: any) => ({ value: item.login, ...item}))
+      })
+  }
+  
+  const renderModel = (item: DataSourceType) => {
+    const githubItem = item as DataSourceType<GithubUserIDProps>
+    return (
+      <>
+        <h2> {githubItem.value}</h2>
+        <p>Userpage: {githubItem.html_url}</p>
+      </>
+    )
+  }
+
+  return(
+    <>
+    <h6>Use for search the Github users' ID:</h6>
+    <SearchBox 
+    searchSuggestions = { handleFetch }
+      onSelect = { action('selected') }
+      renderModel = { renderModel} 
+    />
+    </>
   )
 }
 
 storiesOf('SearchBox Component', module)
   .add('SearchBox', defaultSearchBox)
+  .add('ApiSearchBox', apiSerachbox)
