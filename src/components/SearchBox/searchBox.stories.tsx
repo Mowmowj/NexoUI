@@ -45,7 +45,9 @@ const defaultSearchBox = () => {
     <SearchBox 
     searchSuggestions = { handleFetch }
       onSelect = { action('selected') }
-      renderModel = { renderModel} 
+      renderModel = { renderModel}
+      style={{width: '300px'}}
+      size='sm' 
     />
     </>
   )
@@ -70,7 +72,7 @@ const apiSerachbox = () =>{
     const githubItem = item as DataSourceType<GithubUserIDProps>
     return (
       <>
-        <h2> {githubItem.value}</h2>
+        <p> {githubItem.value}</p>
         <p>Userpage: {githubItem.html_url}</p>
       </>
     )
@@ -83,6 +85,8 @@ const apiSerachbox = () =>{
     searchSuggestions = { handleFetch }
       onSelect = { action('selected') }
       renderModel = { renderModel} 
+      style={{width: '300px'}}
+      size='sm'
     />
     </>
   )

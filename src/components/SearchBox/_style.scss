@@ -1,7 +1,8 @@
-.viking-auto-complete {
+.nexo-searchbox {
   position: relative;
+  width: 300px;
 }
-.viking-suggestion-list {
+.nexo-suggestion-list {
   list-style:none;
   padding-left: 0;
   white-space: nowrap;
@@ -10,7 +11,7 @@
   z-index: 100;
   top: calc(100% + 8px);
   left: 0;
-  border: $menu-border-width solid $menu-border-color;
+  // border: $menu-border-width solid $menu-border-color;
   box-shadow: $submenu-box-shadow;
   width: 100%;
   .suggstions-loading-icon {
