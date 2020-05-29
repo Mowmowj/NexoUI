@@ -35,6 +35,11 @@ export declare const MenuContext: React.Context<IMenuContext>;
  *+ 默认打开子菜单
  *+ 触发菜单事件
  *+ hover弹射子菜单
+
+ * ### Install
+ * ```js
+ * import { Menu } from 'nexoui'
+ * ```
  */
 export declare const Menu: FC<MenuProps>;
 export default Menu;

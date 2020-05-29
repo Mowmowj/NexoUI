@@ -7,6 +7,10 @@ export interface Iconprops extends FontAwesomeIconProps {
 }
 /**
  * this Icon Component base on FrontAwesomeIcon Library
+ * #### Install
+ * ~~~js
+ * import { Icon } from 'nexo'
+ * ~~~
  */
 export declare const Icon: React.FC<Iconprops>;
 export default Icon;

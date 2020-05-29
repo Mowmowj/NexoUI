@@ -1,6 +1,6 @@
 {
   "name": "nexoui",
-  "version": "0.1.4",
+  "version": "0.1.7",
   "description": "React UI components library",
   "author": "Shelton Cheung",
   "private": false,
@@ -18,7 +18,7 @@
     "component",
     "library"
   ],
-  "homepage": "https://github.com/Mowmowj/NexoUI",
+  "homepage": "https://mowmowj.github.io/nexo",
   "repository": {
     "type": "git",
     "url": "https://github.com/Mowmowj/NexoUI"
@@ -49,7 +49,8 @@
     "storybook": "start-storybook -p 9009 -s public",
     "clean-page": "rimraf ./storybook-static",
     "bs": "npm run clean-page && build-storybook -s public",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "all": "npm publish && git add . && git commit -m 'updatenexo' && git pull && git push"
   },
   "husky": {
     "hooks": {
