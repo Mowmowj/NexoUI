@@ -1,18 +1,10 @@
 # Nexo UI
 
-build a front-end UI library for myself
+Author: Shelton Cheung
 
 ## Technology Stack
 
 Typescript	+	React    +	React Hooks   +	ES6   +	Sass   +	StoryBook	+  {...Stack}	= Nexo UI
-
-## Require Analyze
-
-## Update Description
-
-
-
-
 
 ## File Structure
 
@@ -33,13 +25,35 @@ nexo/
 	    index.tsx
 ```
 
-## Interface System
+## Souce Code:
 
-### Color System
+​    <Button btnType="link" size='lg' href="https://github.com/Mowmowj/NexoUI"> 🏝Github</Button>
 
-### Font System
+## Technology Stack
 
-main
+- 🧠️Base on TypeScript with React
+- 🎮use React Hooks
+- 🍥use storybook build the static pages
+- 🥗use Sass finish the style
+- 💧 use react-doc-gen write docs
+- 🥩publish on npm
 
-### Form  System
 
+
+## Sketch
+
+### button
+
+![image-20200529180117378](E:%5Cshelton%5CDesktop%5Cnexo%5CREADME.assets%5Cimage-20200529180117378.png)
+
+### Menu
+
+![image-20200529180942079](E:%5Cshelton%5CDesktop%5Cnexo%5CREADME.assets%5Cimage-20200529180942079.png)
+
+
+
+### SearchBox
+
+![image-20200529182051543](E:%5Cshelton%5CDesktop%5Cnexo%5CREADME.assets%5Cimage-20200529182051543.png)
+
+###  Waitting  Upadate.....
