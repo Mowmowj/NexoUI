@@ -36,8 +36,34 @@ const horizontalMeau = () => (
   </Menu>
 
 )
-
 const verticalMenu = () => (
+  <Menu defaultIndex='1' onSelect={(index)=>{action('clicked')}} mode='vertical'>
+    <MenuItem disabled>
+          home page
+          </MenuItem>
+          <MenuItem >
+          about page
+          </MenuItem>
+          <SubMenu title='MenuWithSub'>
+            <MenuItem>
+            submenu1
+            </MenuItem>
+            <MenuItem>
+            submenu2
+            </MenuItem>
+            <MenuItem>
+            submenu3
+            </MenuItem>
+            <MenuItem>
+            submenu4
+            </MenuItem>
+          </SubMenu>
+          <MenuItem >
+          other page
+          </MenuItem>
+  </Menu>
+)
+const verticalDefaultOpenMenu = () => (
   <Menu defaultIndex='1' onSelect={(index)=>{action('clicked')}} mode='vertical' defaultOpenSubMenus={['2']}>
     <MenuItem disabled>
           home page
@@ -79,4 +105,5 @@ storiesOf('Menu Component', module)
     // .addDecorator(CenterDecorator)//调用css
     .add('Menu', horizontalMeau)    
     .add('Vertical Menu', verticalMenu)
+    .add('vertical opened Menu',verticalDefaultOpenMenu)
  
