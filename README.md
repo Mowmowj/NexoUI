@@ -44,7 +44,7 @@ nexo/
 
 ### button
 
-![button.png](https://github.com/Mowmowj/NexoUI/blob/master/sketch/Button.png)
+![image](https://github.com/Mowmowj/NexoUI/blob/master/sketch/Button.png)
 
 ### Menu
 
