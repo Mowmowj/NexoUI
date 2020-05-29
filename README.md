@@ -53,6 +53,4 @@ nexo/
 ![image SearchBox sketch](https://github.com/Mowmowj/NexoUI/blob/master/sketch/SearchBox.jpg)
 
 
-![image-20200529182051543](E:%5Cshelton%5CDesktop%5Cnexo%5CREADME.assets%5Cimage-20200529182051543.png)
-
 ###  Waitting  Upadate.....
