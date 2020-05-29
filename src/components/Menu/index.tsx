@@ -3,13 +3,14 @@ import Menu, { MenuProps } from './menu'
 import SubMenu, { SubMenuProps } from './subMenu'
 import MenuItem, { MenuItemProps } from './menuItem'
 
-export type IMenuComponent = FC<MenuProps> & {
+export type MenuComponent = FC<MenuProps> & {
   Item: FC<MenuItemProps>,
   SubMenu: FC<SubMenuProps>
 }
-const TransMenu = Menu as IMenuComponent
+const MenuHub = Menu as MenuComponent
 
-TransMenu.Item = MenuItem
-TransMenu.SubMenu = SubMenu
 
-export default TransMenu
+MenuHub.Item = MenuItem
+MenuHub.SubMenu = SubMenu
+
+export default MenuHub

@@ -1,3 +1,3 @@
-import AutoComplete from './autoComplete'
+import SearchBox from './searchbox'
 
-export default AutoComplete
+export default SearchBox
