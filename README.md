@@ -54,16 +54,17 @@ nexo/
 
 ### button
 
+<<<<<<< HEAD
 ![button.png](https://github.com/Mowmowj/NexoUI/blob/master/sketch/Button.png)
+=======
+![image button sketch](https://github.com/Mowmowj/NexoUI/blob/master/sketch/Button.png)
+>>>>>>> 0644c8a0646669359d2dc9062b0a36885be7848a
 
 ### Menu
-
-![image-20200529180942079](E:%5Cshelton%5CDesktop%5Cnexo%5CREADME.assets%5Cimage-20200529180942079.png)
-
-
+![image Menu sketch](https://github.com/Mowmowj/NexoUI/blob/master/sketch/Menu.jpg)
 
 ### SearchBox
+![image SearchBox sketch](https://github.com/Mowmowj/NexoUI/blob/master/sketch/SearchBox.jpg)
 
-![image-20200529182051543](E:%5Cshelton%5CDesktop%5Cnexo%5CREADME.assets%5Cimage-20200529182051543.png)
 
 ###  Waitting  Upadate.....
