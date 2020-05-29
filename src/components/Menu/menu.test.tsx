@@ -8,7 +8,6 @@ jest.mock('../Icon/icon', () => {
     return <i className="fa" />
   }
 })
-
 const testProps: MenuProps = {
   defaultIndex: '0',
   onSelect: jest.fn(),
