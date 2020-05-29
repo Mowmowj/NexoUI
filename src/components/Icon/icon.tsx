@@ -8,8 +8,13 @@ export interface Iconprops extends FontAwesomeIconProps{
     theme?: Themeprops
     classNames?: string
 }
+
 /**
  * this Icon Component base on FrontAwesomeIcon Library
+ * #### Install
+ * ~~~js
+ * import { Icon } from 'nexo'
+ * ~~~
  */
 export const Icon: React.FC<Iconprops> =(props)=>{
     const {className,theme,...restProps} =props

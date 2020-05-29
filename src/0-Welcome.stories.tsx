@@ -4,7 +4,7 @@ import { Button } from "./components/Button/button";
 
 
 
-storiesOf('Quickly Using kit',module)
+storiesOf('Nexo',module)
   .add('welcome',()=>{
    return(
      <>
@@ -15,6 +15,7 @@ storiesOf('Quickly Using kit',module)
         <code>
           npm install nexoui --save
         </code>
+        <br/>
         <br/>
         <h3>Source Code:</h3>
         <Button btnType="link" size='lg' href="https://github.com/Mowmowj/NexoUI"> 🏝Github</Button>

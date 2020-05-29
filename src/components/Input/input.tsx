@@ -20,9 +20,8 @@ export interface InputProps extends Omit<InputHTMLAttributes<HTMLElement>, 'size
 }
 
 /**
- * Nexo's Input Components have these features: 
  * 
- * #### Reaference Methods
+ * #### Install
  * ~~~js
  * import { Input } from 'nexo'
  * ~~~

@@ -41,7 +41,9 @@ const defaultSearchBox = () => {
   }
   return (
     <>
-    <h6>Use for search the NBA Clipper team player's name:</h6>
+    <h6>尝试搜索NBA快船队队员(如paul):</h6>
+    <h5>Use for search the NBA Clipper team players' name(such as paul):</h5>
+    
     <SearchBox 
     searchSuggestions = { handleFetch }
       onSelect = { action('selected') }
@@ -80,7 +82,8 @@ const apiSerachbox = () =>{
 
   return(
     <>
-    <h6>Use for search the Github users' ID:</h6>
+    <h6>尝试搜索github用户名(如Mowmowj):</h6>
+    <h5>Use for search the Github users' ID(such as Moswmowj):</h5>
     <SearchBox 
     searchSuggestions = { handleFetch }
       onSelect = { action('selected') }

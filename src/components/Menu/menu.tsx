@@ -39,6 +39,11 @@ export const MenuContext = createContext<IMenuContext>({index: '0'})
  *+ 默认打开子菜单
  *+ 触发菜单事件
  *+ hover弹射子菜单
+
+ * ### Install
+ * ```js
+ * import { Menu } from 'nexoui'
+ * ```
  */
 export const Menu: FC<MenuProps> = (props) => {
   const { className, mode, style, children, defaultIndex, onSelect, defaultOpenSubMenus } = props

@@ -34,12 +34,11 @@ nexo/
 ```
 
 ## Souce Code:
+**github:** https://github.com/Mowmowj/NexoUI
 
- **github:**https://github.com/Mowmowj/NexoUI
-
-**npm:**
-
-**gitee:**
+## link to view
+**homepage:** https://mowmowj.github.io/nexo
+**npm:** https://www.npmjs.com/package/nexoui
 
 ## Technology Stack
 
