@@ -44,15 +44,14 @@ nexo/
 
 ### button
 
-![image](https://github.com/Mowmowj/NexoUI/blob/master/sketch/Button.png)
+![image button sketch](https://github.com/Mowmowj/NexoUI/blob/master/sketch/Button.png)
 
 ### Menu
-
-![image-20200529180942079](E:%5Cshelton%5CDesktop%5Cnexo%5CREADME.assets%5Cimage-20200529180942079.png)
-
-
+![image Menu sketch](https://github.com/Mowmowj/NexoUI/blob/master/sketch/Menu.jpg)
 
 ### SearchBox
+![image SearchBox sketch](https://github.com/Mowmowj/NexoUI/blob/master/sketch/SearchBox.jpg)
+
 
 ![image-20200529182051543](E:%5Cshelton%5CDesktop%5Cnexo%5CREADME.assets%5Cimage-20200529182051543.png)
 
