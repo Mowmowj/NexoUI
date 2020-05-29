@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/Mowmowj/NexoUI/static/css/main.0974272a.chunk.css",
-    "main.js": "/Mowmowj/NexoUI/main.586ff0f38eedfdae26ee.bundle.js",
+    "main.js": "/Mowmowj/NexoUI/main.8e63844a480a209e49c5.bundle.js",
     "main.css.map": "/Mowmowj/NexoUI/static/css/main.0974272a.chunk.css.map",
-    "main.js.map": "/Mowmowj/NexoUI/main.586ff0f38eedfdae26ee.bundle.js.map",
-    "runtime~main.js": "/Mowmowj/NexoUI/runtime~main.586ff0f38eedfdae26ee.bundle.js",
-    "runtime~main.js.map": "/Mowmowj/NexoUI/runtime~main.586ff0f38eedfdae26ee.bundle.js.map",
+    "main.js.map": "/Mowmowj/NexoUI/main.8e63844a480a209e49c5.bundle.js.map",
+    "runtime~main.js": "/Mowmowj/NexoUI/runtime~main.8e63844a480a209e49c5.bundle.js",
+    "runtime~main.js.map": "/Mowmowj/NexoUI/runtime~main.8e63844a480a209e49c5.bundle.js.map",
     "vendors~main.css": "/Mowmowj/NexoUI/static/css/vendors~main.f8f248a5.chunk.css",
-    "vendors~main.js": "/Mowmowj/NexoUI/vendors~main.586ff0f38eedfdae26ee.bundle.js",
+    "vendors~main.js": "/Mowmowj/NexoUI/vendors~main.8e63844a480a209e49c5.bundle.js",
     "vendors~main.css.map": "/Mowmowj/NexoUI/static/css/vendors~main.f8f248a5.chunk.css.map",
-    "vendors~main.js.map": "/Mowmowj/NexoUI/vendors~main.586ff0f38eedfdae26ee.bundle.js.map",
+    "vendors~main.js.map": "/Mowmowj/NexoUI/vendors~main.8e63844a480a209e49c5.bundle.js.map",
     "iframe.html": "/Mowmowj/NexoUI/iframe.html",
-    "precache-manifest.b1c7898de3a9ca3f33cd6cc05cc3639e.js": "/Mowmowj/NexoUI/precache-manifest.b1c7898de3a9ca3f33cd6cc05cc3639e.js",
+    "precache-manifest.8af689874758c6ab10deaad5a3eef335.js": "/Mowmowj/NexoUI/precache-manifest.8af689874758c6ab10deaad5a3eef335.js",
     "service-worker.js": "/Mowmowj/NexoUI/service-worker.js",
-    "vendors~main.586ff0f38eedfdae26ee.bundle.js.LICENSE.txt": "/Mowmowj/NexoUI/vendors~main.586ff0f38eedfdae26ee.bundle.js.LICENSE.txt"
+    "vendors~main.8e63844a480a209e49c5.bundle.js.LICENSE.txt": "/Mowmowj/NexoUI/vendors~main.8e63844a480a209e49c5.bundle.js.LICENSE.txt"
   },
   "entrypoints": [
-    "runtime~main.586ff0f38eedfdae26ee.bundle.js",
+    "runtime~main.8e63844a480a209e49c5.bundle.js",
     "static/css/vendors~main.f8f248a5.chunk.css",
-    "vendors~main.586ff0f38eedfdae26ee.bundle.js",
+    "vendors~main.8e63844a480a209e49c5.bundle.js",
     "static/css/main.0974272a.chunk.css",
-    "main.586ff0f38eedfdae26ee.bundle.js"
+    "main.8e63844a480a209e49c5.bundle.js"
   ]
 }

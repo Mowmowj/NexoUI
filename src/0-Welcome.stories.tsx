@@ -8,6 +8,7 @@ storiesOf('Quickly Using kit',module)
   .add('welcome',()=>{
    return(
      <>
+       <img src='../sketch/logo.jpg' alt="logo"/>
        <h1>Welcome to Nexo UI </h1><br/><h2>NexoUI</h2>
        <p>Author: Shelton Cheung</p>
        <h3>Install:</h3>

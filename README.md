@@ -6,6 +6,12 @@ Author: Shelton Cheung
 
 Typescript	+	React    +	React Hooks   +	ES6   +	Sass   +	StoryBook	+  {...Stack}	= Nexo UI
 
+## Reference
+
+```
+npm i nexoui --save
+```
+
 ## File Structure
 
 ```js
@@ -27,7 +33,11 @@ nexo/
 
 ## Souce Code:
 
-​    <Button btnType="link" size='lg' href="https://github.com/Mowmowj/NexoUI"> 🏝Github</Button>
+ **github:**https://github.com/Mowmowj/NexoUI
+
+**npm:**
+
+**gitee:**
 
 ## Technology Stack
 
@@ -44,7 +54,7 @@ nexo/
 
 ### button
 
-![image-20200529180117378](E:%5Cshelton%5CDesktop%5Cnexo%5CREADME.assets%5Cimage-20200529180117378.png)
+![button.png](https://github.com/Mowmowj/NexoUI/blob/master/sketch/Button.png)
 
 ### Menu
 
