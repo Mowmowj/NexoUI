@@ -38,6 +38,7 @@ nexo/
 
 ## link to view
 **homepage:** https://mowmowj.github.io/nexo
+
 **npm:** https://www.npmjs.com/package/nexoui
 
 ## Technology Stack
