@@ -20,12 +20,6 @@ const clipperssWithNumber = [
   {value: 'jerome robinson', number: 1},
 ]
 const defaultSearchBox = () => {
-//   const lakers = ['bradley', 'pope', 'caruso', 'cook', 'cousins',
-//   'james', 'AD', 'green', 'howard', 'kuzma', 'McGee', 'rando']
-  
-  // const handleFetch = (query: string) => {
-  //   return lakers.filter(name => name.includes(query)).map(name => ({value: name}))
-  // }
   const handleFetch = (query: string) => {
     return clipperssWithNumber.filter(player => {
       return player.value.includes(query)})

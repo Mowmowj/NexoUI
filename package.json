@@ -50,7 +50,7 @@
     "clean-page": "rimraf ./storybook-static",
     "bs": "npm run clean-page && build-storybook -s public",
     "prepublish": "npm run build",
-    "all": "npm publish && git add . && git commit -m 'updatenexo' && git pull && git push"
+    "all": "npm publish && npm run bs && git add . && git commit -m 'updatenexo' && git pull && git push"
   },
   "husky": {
     "hooks": {
