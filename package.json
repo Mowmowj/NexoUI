@@ -75,7 +75,7 @@
   "devDependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "@storybook/addon-backgrounds": "^5.3.19",
     "@storybook/addon-centered": "^5.3.19",
     "@storybook/react": "^5.3.19",
